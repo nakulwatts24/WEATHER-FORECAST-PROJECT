@@ -19,6 +19,6 @@
   Frontend 
   HTML5
 
-  CSS
+ CSS
 
   JavaScript
