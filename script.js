@@ -78,7 +78,7 @@ async function fetchWeather() {
     return;
   }
 
-  // Geocoding API to get coordinates
+  
   const geocodingUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(
     locationInput
   )}&limit=1&appid=${apiKey}`;
