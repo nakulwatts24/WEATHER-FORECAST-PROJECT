@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Weather Buddy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('about')">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('contact')">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="weather-box text-center my-5">
+            <h1 class="mb-4">Weather Search</h1>
+            <div class="input-group">
+                <input type="text" class="form-control weatherInput" placeholder="Enter City" aria-label="City">
+                <div class="input-group-append">
+                    <button class="btn btn-primary searchButton" onclick="fetchWeather()">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h1>About Us</h1>
+        <div class="weatherAbout">
+            <p>
+                Welcome to Weather Buddy, your trusted source for the most reliable
+                and comprehensive weather updates. Our platform is designed to provide
+                you with accurate, real-time weather information, helping you navigate
+                daily life with confidence, no matter the conditions outside. Whether
+                you're preparing for your morning commute, planning a vacation, or
+                staying informed about severe weather events, we are here to ensure
+                you're always one step ahead of the weather.
+                <br />
+                At Weather Buddy, we leverage cutting-edge meteorological technology,
+                satellite data, and expert analysis to deliver the most precise
+                forecasts available. Our weather reports are not only timely but also
+                highly detailed, offering everything from hourly and weekly forecasts
+                to interactive radar maps, temperature trends, humidity levels, and
+                air quality updates. In addition, we provide personalized alerts and
+                notifications so that you're never caught off guard by sudden weather
+                changes.
+                <br />
+                Our user-friendly interface ensures that accessing the information you
+                need is quick and straightforward, whether you're using our website or
+                mobile app. With features designed for both casual users and weather
+                enthusiasts alike, Weather Buddy offers a seamless experience tailored
+                to your specific needs. We believe that weather forecasting should be
+                easy to understand and accessible to everyone, which is why we
+                prioritize clarity, accuracy, and convenience in everything we do.
+                <br />
+                From sunny skies to stormy weather, Weather Buddy is here to keep you
+                informed and prepared. Stay ahead of the weather with
+                confidence—because when it comes to planning your day, every detail
+                matters.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact my-5">
+            <h1 class="text-center">Contact Us</h1>
+            <p class="text-center">For any inquiries, feel free to reach out to our team:</p>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Person 1</h3>
+                            <p>Name: Nakul</p>
+                            <p>Phone: +919815354586</p>
+                            <p>Email: <a href="mailto:nakul1276.becse24@chitkara.edu.in">nakul1276.becse24@chitkara.edu.in</a></p>
+                            <p>Instagram: <a href="https://www.instagram.com/nakul_watts24" target="_blank">@nakul_watts24</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Person 2</h3>
+                            <p>Name: Navya</p>
+                            <p>Phone: +917988737671</p>
+                            <p>Email: <a href="mailto:navya1283.becse24@chitkara.edu.in">navya1283.becse24@chitkara.edu.in</a></p>
+                            <p>Instagram: <a href="https://www.instagram.com/navya___58_" target="_blank">@navya___58_</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Person 3</h3>
+                            <p>Name: Hardik Chilana</p>
+                            <p>Phone: +919817198448</p>
+                            <p>Email: <a href="mailto:hardik1222.becse24@chitkara.edu.in">hardik1222.becse24@chitkara.edu.in</a></p>
+                            <p>Instagram: <a href="https://www.instagram.com/chilanahardik5" target="_blank">@chilanahardik5</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="auth" class="section">
+        <div class="auth-box card mx-auto mt-5 p-4" style="max-width: 400px;">
+            <h2 id="auth-title" class="text-center">Login</h2>
+            <form id="auth-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" id="username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" id="password" required>
+                </div>
+                <div class="form-group" id="register-fields" style="display:none;">
+                    <input type="text" class="form-control" placeholder="Mobile Number" id="mobile" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <button type="button" class="btn btn-secondary btn-block" onclick="toggleForm()">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
