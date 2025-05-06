@@ -1,3 +1,6 @@
+.weather-container {
+    background-color: #ffffff; /* Same color, but changed for commit */
+}
 body, html {
   height: 100%;
   margin: 0;
