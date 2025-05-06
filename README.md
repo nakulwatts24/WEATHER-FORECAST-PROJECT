@@ -22,6 +22,8 @@
   CSS
 
   JavaScript
-  ![Screenshot (20)](https://github.com/user-attachments/assets/756e8e14-b8fc-4f97-9393-116aae1eb80e)
+  # The home page
+ ![image](https://github.com/user-attachments/assets/63c384b3-1e78-4f01-989a-ffc2bc2661b4)
+ 
 
   
