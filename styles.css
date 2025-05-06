@@ -13,6 +13,11 @@ h1, h2 {
   color: black;
   text-align: center;
 }
+echo "<!-- Initial comment -->" > info.html
+echo "/* Initial note */" > style.css
+git add info.html style.css
+git commit -m "Initial setup"
+
 
 p {
   line-height: 1.6;
