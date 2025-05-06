@@ -20,5 +20,9 @@
   HTML5
 
  CSS
+![Screenshot (20)](https://github.com/user-attachments/assets/756e8e14-b8fc-4f97-9393-116aae1eb80e)
 
-  JavaScript
+  JavaScript!![Alt text](![image](https://github.com/user-attachments/assets/4e03856c-7bfe-4a36-b227-e7883727b146)
+)
+
+  
