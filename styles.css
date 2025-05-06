@@ -80,6 +80,10 @@ section {
 .card {
   margin: 10px;
 }
+.commit-log li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
 
 .auth-box {
   background-color: #f8f9fa;
