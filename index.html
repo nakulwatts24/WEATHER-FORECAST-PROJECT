@@ -118,6 +118,14 @@ done
                         </div>
                     </div>
                 </div>
+                <button type="button" id="clearLogBtn">Clear Log</button>
+
+<script>
+    document.getElementById('clearLogBtn').addEventListener('click', function() {
+        commitList.innerHTML = '';
+    });
+</script>
+
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
