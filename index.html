@@ -46,6 +46,20 @@
 <div class="weather-container">
     <!-- Weather display section -->
 </div>
+    for i in {1..5}
+do
+  echo "<!-- update $i -->" >> info.html
+  git add info.html
+  git commit -m "Update HTML comment $i"
+done
+
+for i in {6..10}
+do
+  echo "/* update $i */" >> style.css
+  git add style.css
+  git commit -m "Update CSS comment $i"
+done
+
 
 
     <section id="about" class="section">
