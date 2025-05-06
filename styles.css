@@ -78,6 +78,12 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+<div class="weather-container">
+  <div class="temperature">
+    <p>25°C</p>
+  </div>
+</div> <!-- Added extra spaces or changed indentation -->
+
 
 .auth-box h2 {
   margin-bottom: 20px;
