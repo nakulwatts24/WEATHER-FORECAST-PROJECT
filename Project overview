@@ -1,1 +1,40 @@
+Features:
+Search weather by city name
+
+Display:
+
+Current temperature
+
+Weather condition (e.g., clear, cloudy, rain)
+
+Humidity and wind speed
+
+Weather icons
+
+Responsive layout for mobile and desktop
+
+Smooth and clean UI design with CSS styling
+
+Tech Stack Used:
+HTML – For creating the structure of the web app
+
+CSS – For styling and making the UI responsive and visually appealing
+
+JavaScript – For handling user interaction and API integration
+
+How It Works:
+User enters a city name in the input box.
+
+On clicking "Search", JavaScript sends a fetch request to a public weather API (e.g., OpenWeatherMap).
+
+The response is parsed, and the relevant weather data is extracted.
+
+The app dynamically updates the DOM to display the weather information.
+
+Example Tools & APIs Used:
+OpenWeatherMap API
+
+fetch() for making API calls
+
+Basic DOM manipulation with JavaScript
 
